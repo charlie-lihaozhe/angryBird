@@ -1,19 +1,17 @@
 package angrybird;
 
-import angrybird.util.factory.FactoryApply;
-import angrybird.util.factory.impl.CheckersFactory;
-import angrybird.util.factory.impl.ChessFactory;
-import angrybird.util.iterator.SimpleIteration;
-import angrybird.util.map.Statistics;
-import angrybird.util.queue.PriorityQueueDemo;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import angrybird.util.string.Finding;
 
 public class main {
+    public static String knights =
+        "Then, when you have found the shrubbery|tree|herring, you must " +
+            "cut down the mightiest tree in the forest... " +
+            "with... a herring!";
+
     public static void main(String[] args) {
-        String s = "Dos Attack is BaLala";
-        PriorityQueueDemo priorityQueueDemo = new PriorityQueueDemo();
-        priorityQueueDemo.priorityQueue();
+        Finding finding = new Finding();
+        finding.finding();
+//        System.out.println(knights.replaceFirst("f\\w+", "located"));
+//        System.out.println(knights.replaceAll("shrubbery\\|tree\\|herring", "located"));
     }
 }
