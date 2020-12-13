@@ -4,10 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+//todo: 工厂类理解的还不到位
+
 class Part {
     public String toString() {
         return getClass().getSimpleName();
     }
+    // 每一个类中声明一个的Factory子类，用于创建工厂
     static List<Factory<? extends Part>> partFactories = new ArrayList<Factory<? extends Part>>();
     static {
         partFactories.add(new FuelFilter.Factory());
